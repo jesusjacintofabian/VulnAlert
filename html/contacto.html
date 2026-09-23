@@ -5,105 +5,101 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="VulnAlert: portal académico sobre vulnerabilidades de ciberseguridad recientes.">
 <title>Contacto | VulnAlert</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-<header>
-  <div class="nav">
-    <a class="logo" href="index.html">Vuln<span>Alert</span></a>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="acerca.html">Acerca de</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </div>
-</header>
+
+<aside class="panelLateral">
+  <a class="logo" href="index.html">VulnAlert</a>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="acerca.html">Acerca de</a>
+    <a href="contacto.html" class="activo">Contacto</a>
+  </nav>
+</aside>
+
+<div>
 <main>
 
-<section class="hero">
-  <span class="badge">CONTACTO</span>
-  <h1>¿Tienes una <span>alerta</span>?</h1>
+<header>
+  <p class="etiqueta">CONTACTO</p>
+  <h1>¿Tienes una alerta?</h1>
   <p>Formulario académico de contacto para enviar comentarios, sugerencias o solicitar información sobre una vulnerabilidad.</p>
-</section>
+</header>
 
-<section class="layout">
-  <div>
-    <article>
-      <h2>Formulario de contacto</h2>
-      <form action="#" method="post">
-        <div>
-          <label for="nombre">Nombre completo</label>
-          <input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre" required>
-        </div>
-
-        <div>
-          <label for="correo">Correo electrónico</label>
-          <input id="correo" name="correo" type="email" placeholder="nombre@correo.com" required>
-        </div>
-
-        <div>
-          <label for="tipo">Tipo de consulta</label>
-          <select id="tipo" name="tipo">
-            <option value="informacion">Información sobre una CVE</option>
-            <option value="alerta">Nueva alerta</option>
-            <option value="sugerencia">Sugerencia</option>
-            <option value="otro">Otro</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="cve">CVE relacionada (opcional)</label>
-          <input id="cve" name="cve" type="text" placeholder="Ej.: CVE-2026-85046">
-        </div>
-
-        <div>
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" placeholder="Describe tu consulta..." required></textarea>
-        </div>
-
-        <button type="submit">Enviar formulario</button>
-      </form>
-    </article>
-  </div>
-
+<div class="grid">
+  <article>
+    <h2>Formulario de contacto</h2>
+    <form action="#" method="post">
+      <div>
+        <label for="nombre">Nombre completo</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre" required>
+      </div>
+      <div>
+        <label for="correo">Correo electrónico</label>
+        <input id="correo" name="correo" type="email" placeholder="nombre@correo.com" required>
+      </div>
+      <div>
+        <label for="tipo">Tipo de consulta</label>
+        <select id="tipo" name="tipo">
+          <option value="informacion">Información sobre una CVE</option>
+          <option value="alerta">Nueva alerta</option>
+          <option value="sugerencia">Sugerencia</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <div>
+        <label for="cve">CVE relacionada (opcional)</label>
+        <input id="cve" name="cve" type="text" placeholder="Ej.: CVE-2026-85046">
+      </div>
+      <div>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Describe tu consulta..." required></textarea>
+      </div>
+      <button type="submit">Enviar formulario</button>
+    </form>
+  </article>
   <aside>
-    <div class="aside-box">
-      <h3>Información</h3>
-      <p class="small">Este formulario es una demostración HTML5. No envía información a un servidor real porque el proyecto académico es estático.</p>
+    <div class="caja">
+      <h2>Información</h2>
+      <p>Este formulario es una demostración HTML5. No envía información a un servidor real porque el proyecto académico es estático.</p>
     </div>
-    <div class="aside-box">
-      <h3>Fuentes de consulta</h3>
+    <div class="caja">
+      <h2>Fuentes de consulta</h2>
       <ul>
         <li><a href="https://nvd.nist.gov/vuln/search" target="_blank" rel="noopener">NVD / NIST</a></li>
         <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA KEV</a></li>
       </ul>
     </div>
   </aside>
-</section>
+</div>
 
-<section>
-  <article>
-    <h2>Redes sociales</h2>
-    <p>También puedes encontrar contenido relacionado con ciberseguridad en:</p>
-    <p>
-      <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a> ·
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a> ·
-      <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
-    </p>
-  </article>
-</section>
+<article>
+  <h2>Redes sociales</h2>
+  <p>También puedes encontrar contenido relacionado con ciberseguridad en:</p>
+  <p>
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a> ·
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a> ·
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+  </p>
+</article>
 
 </main>
 <footer>
-  <div class="footer-inner">
-    <div><strong>VulnAlert</strong><br><span class="small">Proyecto académico — HTML5 & CSS3</span></div>
-    <div class="social">
-      <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
-    </div>
-    <div class="small">Actualizado: 21/09/2026</div>
+  <div>
+    <strong>VulnAlert</strong><br>
+    <p>Proyecto académico — HTML5 & CSS3</p>
   </div>
+  <div>
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+  </div>
+  <p>Actualizado: 21/09/2026</p>
 </footer>
+</div>
 </body>
 </html>
