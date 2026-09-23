@@ -5,12 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="VulnAlert: portal académico sobre vulnerabilidades de ciberseguridad recientes.">
 <title>Inicio | VulnAlert</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
 
 <aside class="panelLateral">
-  <a class="logo" href="index.html">VulnAlert</a>
+  <a class="logo" href="index.html"><img src="../img/logo.png" alt="Logo de VulnAlert"></a>
   <nav>
     <a href="index.html" class="activo">Inicio</a>
     <a href="acerca.html">Acerca de</a>
@@ -30,23 +33,34 @@
 <section>
   <h2>Vulnerabilidades destacadas</h2>
   <div class="grid">
-    <article class="caja">
-      <p>CVE-2026-85046 · 03/09/2026</p>
-      <h2>Google Chrome / V8</h2>
-      <p>Vulnerabilidad de confusión de tipos en V8. NVD registra que afecta a Chrome anterior a 152.0.7977.82 y permite ejecución de código mediante una página web especialmente creada.</p>
-      <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-85046" target="_blank" rel="noopener">Ver CVE en NVD →</a>
+    <article class="caja tarjeta">
+      <img src="../img/cve-chrome.svg" alt="Ilustración de vulnerabilidad en navegador">
+      <div>
+        <p>CVE-2026-85046 · 03/09/2026</p>
+        <h2>Google Chrome / V8</h2>
+        <p>Vulnerabilidad de confusión de tipos en V8. NVD registra que afecta a Chrome anterior a 152.0.7977.82 y permite ejecución de código mediante una página web especialmente creada.</p>
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-85046" target="_blank" rel="noopener">Ver CVE en NVD →</a>
+      </div>
     </article>
-    <article class="caja">
-      <p>CVE-2026-87886 · 17/09/2026</p>
-      <h2>Acronis Backup</h2>
-      <p>Escalada local de privilegios causada por permisos de archivos inseguros en complementos de Acronis Backup para cPanel/WHM, Plesk y DirectAdmin sobre Linux.</p>
-      <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-87886" target="_blank" rel="noopener">Ver CVE en NVD →</a>
+
+    <article class="caja tarjeta">
+      <img src="../img/cve-acronis.svg" alt="Ilustración de seguridad en servidores Linux">
+      <div>
+        <p>CVE-2026-87886 · 17/09/2026</p>
+        <h2>Acronis Backup</h2>
+        <p>Escalada local de privilegios causada por permisos de archivos inseguros en complementos de Acronis Backup para cPanel/WHM, Plesk y DirectAdmin sobre Linux.</p>
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-87886" target="_blank" rel="noopener">Ver CVE en NVD →</a>
+      </div>
     </article>
-    <article class="caja">
-      <p>CVE-2026-58704 · 15/09/2026</p>
-      <h2>Android / Cellular Modem</h2>
-      <p>Google describe un posible bypass de permisos por un error lógico en el módem celular, con posibilidad de escalada de privilegios desde un vector de red adyacente.</p>
-      <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58704" target="_blank" rel="noopener">Ver CVE en NVD →</a>
+
+    <article class="caja tarjeta">
+      <img src="../img/cve-android.svg" alt="Ilustración de seguridad móvil">
+      <div>
+        <p>CVE-2026-58704 · 15/09/2026</p>
+        <h2>Android / Cellular Modem</h2>
+        <p>Google describe un posible bypass de permisos por un error lógico en el módem celular, con posibilidad de escalada de privilegios desde un vector de red adyacente.</p>
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58704" target="_blank" rel="noopener">Ver CVE en NVD →</a>
+      </div>
     </article>
   </div>
 </section>
@@ -104,8 +118,15 @@
       </audio>
     </div>
     <div class="caja">
-      <h2>Mockup Página Web</h2>
+      <h2>Video de introducción</h2>
       <video controls poster="../img/video-poster.svg">
+        <source src="../video/resumen-vulnerabilidades.mp4" type="video/mp4">
+        Tu navegador no soporta video HTML5.
+      </video>
+    </div>
+    <div class="caja">
+      <h2>Mockup Página Web</h2>
+      <video controls>
         <source src="../video/mockup.mp4" type="video/mp4">
         Tu navegador no soporta video HTML5.
       </video>
@@ -113,7 +134,7 @@
   </div>
 </section>
 
-<div class="caja">
+<div class="caja nota">
   <p><strong>Nota académica:</strong> las vulnerabilidades cambian continuamente. Este sitio muestra un corte informativo al 23/09/2026. Para conocer el estado actual, consulte directamente NVD y CISA.</p>
 </div>
 
@@ -121,14 +142,14 @@
 <footer>
   <div>
     <strong>VulnAlert</strong><br>
-    <p>Proyecto académico — HTML5 & CSS3</p>
+    <p>Proyecto académico — HTML5 &amp; CSS3</p>
   </div>
   <div>
     <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
     <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
     <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
   </div>
-  <p>Actualizado: 21/09/2026</p>
+  <p>Actualizado: 23/09/2026</p>
 </footer>
 </div>
 </body>

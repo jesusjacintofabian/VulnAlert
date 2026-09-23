@@ -2,7 +2,7 @@ WIREFRAME — VULNALERT
 Técnica utilizada: WIREFRAME
 
 ┌──────────────────────────────────────────────────────────────┐
-│ LOGO VULNALERT      INICIO | ACERCA DE | CONTACTO           │
+│ LOGO VULNALERT      INICIO | ACERCA DE | CONTACTO            │
 ├──────────────────────────────────────────────────────────────┤
 │                                                              │
 │       HERO: ÚLTIMAS VULNERABILIDADES                         │
@@ -12,7 +12,7 @@ Técnica utilizada: WIREFRAME
 │  [CVE CHROME]      [CVE ACRONIS]      [CVE ANDROID]          │
 │  imagen + texto    imagen + texto     imagen + texto         │
 ├──────────────────────────────────────────────────────────────┤
-│ ARTÍCULOS / TABLA                      │ ASIDE / FUENTES      │
+│ ARTÍCULOS / TABLA                      │ ASIDE / FUENTES     │
 │ información real                      │ NVD / CISA           │
 ├──────────────────────────────────────────────────────────────┤
 │ AUDIO                                 │ VIDEO                │

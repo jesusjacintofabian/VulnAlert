@@ -1,13 +1,15 @@
 /* ===== Variables ===== */
 :root{
-  --colorFondo:#ffffff;
-  --colorFondoPanel:#faf9f7;
-  --colorTexto:#222222;
-  --colorTextoSuave:#5c5c5c;
-  --colorBorde:#e2ded8;
-  --colorAcento:#7a2330;
+  --colorFondo:#080b10;
+  --colorFondoPanel:#000000;
+  --colorCaja:#111720;
+  --colorTexto:#edf2f7;
+  --colorTextoSuave:#aab5c1;
+  --colorBorde:#293341;
+  --colorAcento:#e53935;
+  --colorAcentoClaro:#ff6b6b;
   --anchoPanel:230px;
-  --fuentePrincipal:'Times New Roman', Times, serif;
+  --fuentePrincipal:'Lora', Georgia, 'Times New Roman', serif;
 }
 
 /* ===== Base ===== */
@@ -23,7 +25,7 @@ body{
   line-height:1.7;
 }
 
-a{color:var(--colorAcento)}
+a{color:var(--colorAcentoClaro)}
 p{color:var(--colorTextoSuave)}
 
 h1,h2,h3{
@@ -32,7 +34,7 @@ h1,h2,h3{
 }
 
 h1{
-  font-size:2.2rem;
+  font-size:2.4rem;
   line-height:1.2;
 }
 
@@ -43,7 +45,7 @@ h2{
 
 h3{
   font-size:1.05rem;
-  color:var(--colorAcento);
+  color:var(--colorAcentoClaro);
   margin:16px 0 6px;
 }
 
@@ -51,13 +53,17 @@ ul,ol{
   padding-left:22px;
 }
 
+li{
+  color:var(--colorTextoSuave);
+}
+
 /* ===== Panel lateral (única clase de navegación) ===== */
 .panelLateral{
   width:var(--anchoPanel);
   flex-shrink:0;
   background:var(--colorFondoPanel);
-  border-right:1px solid var(--colorBorde);
-  padding:40px 24px;
+  border-right:2px solid var(--colorAcento);
+  padding:32px 24px;
   position:sticky;
   top:0;
   height:100vh;
@@ -65,11 +71,14 @@ ul,ol{
 
 .logo{
   display:block;
-  font-size:1.4rem;
-  font-weight:600;
-  text-decoration:none;
-  color:var(--colorTexto);
-  margin-bottom:44px;
+  width:100%;
+  margin-bottom:32px;
+}
+
+.logo img{
+  display:block;
+  width:100%;
+  height:auto;
 }
 
 .panelLateral nav{
@@ -87,13 +96,14 @@ ul,ol{
 
 .panelLateral nav a:hover,
 .panelLateral nav a.activo{
-  color:var(--colorAcento);
+  color:var(--colorAcentoClaro);
   border-left-color:var(--colorAcento);
 }
 
 /* ===== Columna de contenido ===== */
 body>div{
   flex:1;
+  min-width:0;
   display:flex;
   flex-direction:column;
 }
@@ -111,11 +121,33 @@ main article+article{
   margin-top:28px;
 }
 
+.grid>article+article{
+  margin-top:0;
+}
+
+p+p{
+  margin-top:12px;
+}
+
+/* ===== Encabezado de página ===== */
+main>header{
+  border-left:5px solid var(--colorAcento);
+  padding-left:28px;
+}
+
+main>header h1{
+  margin-bottom:14px;
+}
+
+main>header p:not(.etiqueta){
+  max-width:760px;
+}
+
 /* ===== Etiqueta reutilizable (insignias de todas las páginas) ===== */
 .etiqueta{
   display:inline-block;
   border:1px solid var(--colorAcento);
-  color:var(--colorAcento);
+  color:var(--colorAcentoClaro);
   padding:4px 12px;
   font-size:.78rem;
   letter-spacing:.5px;
@@ -134,7 +166,9 @@ main article+article{
 }
 
 /* ===== Caja reutilizable (tarjetas, listas, notas, multimedia) ===== */
-.caja{
+.caja,
+article{
+  background:var(--colorCaja);
   border:1px solid var(--colorBorde);
   padding:20px;
 }
@@ -146,6 +180,37 @@ main article+article{
 .caja a{
   font-size:.9rem;
   text-decoration:underline;
+}
+
+/* ===== Tarjeta con imagen (vulnerabilidades destacadas) ===== */
+.tarjeta{
+  padding:0;
+  display:flex;
+  flex-direction:column;
+}
+
+.tarjeta img{
+  width:100%;
+  height:155px;
+  object-fit:cover;
+  border-bottom:1px solid var(--colorBorde);
+}
+
+.tarjeta div{
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  flex:1;
+}
+
+.tarjeta a{
+  margin-top:auto;
+}
+
+/* ===== Nota académica ===== */
+.nota{
+  border-left:4px solid var(--colorAcento);
 }
 
 /* ===== Tabla ===== */
@@ -169,6 +234,10 @@ th{
 
 td{
   color:var(--colorTextoSuave);
+}
+
+td:first-child{
+  white-space:nowrap;
 }
 
 /* ===== Formulario ===== */
@@ -202,8 +271,8 @@ textarea{
 
 button{
   border:1px solid var(--colorAcento);
-  background:transparent;
-  color:var(--colorAcento);
+  background:var(--colorAcento);
+  color:#fff;
   padding:11px 22px;
   font:inherit;
   font-weight:600;
@@ -212,8 +281,8 @@ button{
 }
 
 button:hover{
-  background:var(--colorAcento);
-  color:#fff;
+  background:transparent;
+  color:var(--colorAcentoClaro);
 }
 
 /* ===== Multimedia ===== */
@@ -228,10 +297,15 @@ footer{
   justify-content:space-between;
   flex-wrap:wrap;
   gap:20px;
+  background:var(--colorFondoPanel);
   border-top:1px solid var(--colorBorde);
   padding:26px 64px;
   font-size:.85rem;
   color:var(--colorTextoSuave);
+}
+
+footer p{
+  font-size:.85rem;
 }
 
 footer a{
@@ -250,6 +324,13 @@ footer a{
     height:auto;
     position:relative;
     padding:24px;
+    border-right:0;
+    border-bottom:2px solid var(--colorAcento);
+  }
+
+  .logo{
+    width:120px;
+    margin-bottom:20px;
   }
 
   .panelLateral nav{
@@ -260,6 +341,18 @@ footer a{
 
   main{
     padding:32px 24px;
+  }
+
+  main>header{
+    padding-left:18px;
+  }
+
+  h1{
+    font-size:1.9rem;
+  }
+
+  td:first-child{
+    white-space:normal;
   }
 
   footer{
