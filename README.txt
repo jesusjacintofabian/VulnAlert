@@ -4,7 +4,7 @@ Universidad Tecnológica de Panamá
 Tema: Últimas vulnerabilidades
 
 
-PAGINA: https://github.com/jesusjacintofabian/VulnAlert
+PAGINA: jesusjacintofabian.github.io/VulnAlert/
 
 INTEGRANTES:
 	JESUS JACINTO
