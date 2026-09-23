@@ -5,57 +5,56 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="VulnAlert: portal académico sobre vulnerabilidades de ciberseguridad recientes.">
 <title>Acerca de | VulnAlert</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-<header>
-  <div class="nav">
-    <a class="logo" href="index.html">Vuln<span>Alert</span></a>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="acerca.html">Acerca de</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </div>
-</header>
+
+<aside class="panelLateral">
+  <a class="logo" href="index.html">VulnAlert</a>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="acerca.html" class="activo">Acerca de</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+</aside>
+
+<div>
 <main>
 
-<section class="hero">
-  <span class="badge">SOBRE EL PROYECTO</span>
-  <h1>Comprender las <span>vulnerabilidades</span></h1>
+<header>
+  <p class="etiqueta">SOBRE EL PROYECTO</p>
+  <h1>Comprender las vulnerabilidades</h1>
   <p>Este sitio explica de forma sencilla qué son las vulnerabilidades CVE, cómo se identifican y por qué las actualizaciones son una parte fundamental de la defensa.</p>
-</section>
+</header>
 
-<section class="layout">
+<div class="grid">
   <div>
     <article>
       <h2>¿Qué significa CVE?</h2>
       <p>CVE significa <strong>Common Vulnerabilities and Exposures</strong>. Es un sistema de identificación utilizado para referirse de manera consistente a vulnerabilidades de seguridad conocidas.</p>
       <p>Un CVE no significa que el problema pertenezca a HTML, redes o un único tipo de tecnología. Puede corresponder a navegadores, sistemas operativos, aplicaciones, dispositivos de red, servidores y otros productos.</p>
     </article>
-
     <article>
       <h2>¿Qué es NVD?</h2>
       <p>La <strong>National Vulnerability Database (NVD)</strong> del NIST proporciona información sobre vulnerabilidades, incluyendo referencias, productos afectados, debilidades CWE y métricas de riesgo cuando existen datos suficientes.</p>
       <p>Para este proyecto se consultaron registros publicados durante septiembre de 2026.</p>
     </article>
-
     <article>
       <h2>Los tres casos presentados</h2>
       <h3>1. CVE-2026-85046 — Chrome / V8</h3>
       <p>NVD registra una confusión de tipos en V8. La vulnerabilidad afecta versiones de Chrome anteriores a 152.0.7977.82 y puede ser activada mediante una página HTML especialmente creada. Google indicó que existía explotación en la práctica.</p>
-
       <h3>2. CVE-2026-87886 — Acronis Backup</h3>
       <p>Se trata de una escalada local de privilegios causada por permisos de archivos inseguros. Afecta determinados complementos/extensiones de Acronis Backup para Linux. Las versiones corregidas deben verificarse en el aviso del fabricante.</p>
-
       <h3>3. CVE-2026-58704 — Android / Cellular Modem</h3>
       <p>Google describe un bypass de permisos debido a un error lógico en el componente Cellular Modem. El registro indica posibilidad de escalada de privilegios desde un vector de red adyacente y sin interacción del usuario.</p>
     </article>
   </div>
-
   <aside>
-    <div class="aside-box">
-      <h3>Conceptos clave</h3>
+    <div class="caja">
+      <h2>Conceptos clave</h2>
       <ul>
         <li><strong>CVE:</strong> identificador de vulnerabilidad.</li>
         <li><strong>CWE:</strong> clasificación del tipo de debilidad.</li>
@@ -64,32 +63,32 @@
         <li><strong>KEV:</strong> catálogo de vulnerabilidades conocidas como explotadas de CISA.</li>
       </ul>
     </div>
-    <div class="aside-box">
-      <h3>Enlaces externos</h3>
+    <div class="caja">
+      <h2>Enlaces externos</h2>
       <p><a href="https://nvd.nist.gov/vuln/search" target="_blank" rel="noopener">NIST National Vulnerability Database</a></p>
       <p><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA Known Exploited Vulnerabilities</a></p>
     </div>
   </aside>
-</section>
+</div>
 
-<section>
-  <article>
-    <h2>Objetivo académico</h2>
-    <p>El objetivo del sitio es demostrar el uso de HTML5 y CSS3 para organizar información real de ciberseguridad utilizando elementos semánticos como <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>article</code>, <code>aside</code> y <code>footer</code>, además de listas, tablas, formularios y contenido multimedia.</p>
-  </article>
-</section>
+<article>
+  <h2>Objetivo académico</h2>
+  <p>El objetivo del sitio es demostrar el uso de HTML5 y CSS3 para organizar información real de ciberseguridad utilizando elementos semánticos como <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>article</code>, <code>aside</code> y <code>footer</code>, además de listas, tablas, formularios y contenido multimedia.</p>
+</article>
 
 </main>
 <footer>
-  <div class="footer-inner">
-    <div><strong>VulnAlert</strong><br><span class="small">Proyecto académico — HTML5 & CSS3</span></div>
-    <div class="social">
-      <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
-    </div>
-    <div class="small">Actualizado: 21/09/2026</div>
+  <div>
+    <strong>VulnAlert</strong><br>
+    <p>Proyecto académico — HTML5 & CSS3</p>
   </div>
+  <div>
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+  </div>
+  <p>Actualizado: 21/09/2026</p>
 </footer>
+</div>
 </body>
 </html>
