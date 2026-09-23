@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="VulnAlert: portal académico sobre vulnerabilidades de ciberseguridad recientes.">
+<title>Inicio | VulnAlert</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+<aside class="panelLateral">
+  <a class="logo" href="index.html"><img src="../img/logo.png" alt="Logo de VulnAlert"></a>
+  <nav>
+    <a href="index.html" class="activo">Inicio</a>
+    <a href="acerca.html">Acerca de</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+</aside>
+
+<div>
+<main>
+
+<header>
+  <p class="etiqueta">ACTUALIZACIÓN · 23 SEPTIEMBRE 2026</p>
+  <h1>Últimas vulnerabilidades de ciberseguridad</h1>
+  <p>VulnAlert presenta información resumida sobre vulnerabilidades CVE recientes, sus productos afectados, impacto y medidas de actualización. La información se basa principalmente en registros públicos de NVD/CISA y fuentes de fabricantes.</p>
+</header>
+
+<section>
+  <h2>Vulnerabilidades destacadas</h2>
+  <div class="grid">
+    <article class="caja tarjeta">
+      <img src="../img/cve-chrome.svg" alt="Ilustración de vulnerabilidad en navegador">
+      <div>
+        <p>CVE-2026-85046 · 03/09/2026</p>
+        <h2>Google Chrome / V8</h2>
+        <p>Vulnerabilidad de confusión de tipos en V8. NVD registra que afecta a Chrome anterior a 152.0.7977.82 y permite ejecución de código mediante una página web especialmente creada.</p>
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-85046" target="_blank" rel="noopener">Ver CVE en NVD →</a>
+      </div>
+    </article>
+
+    <article class="caja tarjeta">
+      <img src="../img/cve-acronis.svg" alt="Ilustración de seguridad en servidores Linux">
+      <div>
+        <p>CVE-2026-87886 · 17/09/2026</p>
+        <h2>Acronis Backup</h2>
+        <p>Escalada local de privilegios causada por permisos de archivos inseguros en complementos de Acronis Backup para cPanel/WHM, Plesk y DirectAdmin sobre Linux.</p>
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-87886" target="_blank" rel="noopener">Ver CVE en NVD →</a>
+      </div>
+    </article>
+
+    <article class="caja tarjeta">
+      <img src="../img/cve-android.svg" alt="Ilustración de seguridad móvil">
+      <div>
+        <p>CVE-2026-58704 · 15/09/2026</p>
+        <h2>Android / Cellular Modem</h2>
+        <p>Google describe un posible bypass de permisos por un error lógico en el módem celular, con posibilidad de escalada de privilegios desde un vector de red adyacente.</p>
+        <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58704" target="_blank" rel="noopener">Ver CVE en NVD →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section>
+  <div class="grid">
+    <div>
+      <article>
+        <h2>¿Qué es una vulnerabilidad?</h2>
+        <p>Una vulnerabilidad es una debilidad en un producto, sistema o componente que puede permitir que un atacante afecte la confidencialidad, integridad o disponibilidad de información o servicios.</p>
+        <p>El identificador <strong>CVE</strong> permite referirse de forma estandarizada a vulnerabilidades conocidas. NVD añade información técnica, productos afectados y métricas cuando están disponibles.</p>
+      </article>
+      <article>
+        <h2>Resumen técnico de los casos</h2>
+        <table>
+          <tr><th>CVE</th><th>Producto</th><th>Tipo</th><th>Dato clave</th></tr>
+          <tr><td>CVE-2026-85046</td><td>Chrome / V8</td><td>CWE-843</td><td>Type confusion; ejecución de código dentro del sandbox mediante contenido web creado para activar el fallo.</td></tr>
+          <tr><td>CVE-2026-87886</td><td>Acronis Backup</td><td>CWE-276</td><td>Escalada local de privilegios por permisos inseguros.</td></tr>
+          <tr><td>CVE-2026-58704</td><td>Android / Cellular Modem</td><td>CWE-285 / CWE-693</td><td>Bypass de permisos y posible escalada de privilegios.</td></tr>
+        </table>
+      </article>
+    </div>
+    <aside>
+      <div class="caja">
+        <h2>Fuentes utilizadas</h2>
+        <ul>
+          <li><a href="https://nvd.nist.gov/vuln/search" target="_blank" rel="noopener">NIST NVD</a></li>
+          <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA KEV</a></li>
+          <li><a href="https://source.android.com/docs/security/bulletin/pixel/2026/2026-09-01" target="_blank" rel="noopener">Android Security Bulletin</a></li>
+        </ul>
+      </div>
+      <div class="caja">
+        <h2>Buenas prácticas</h2>
+        <ol>
+          <li>Actualizar software y firmware.</li>
+          <li>Priorizar vulnerabilidades explotadas activamente.</li>
+          <li>Reducir servicios expuestos a Internet.</li>
+          <li>Usar MFA y mínimo privilegio.</li>
+          <li>Revisar registros y alertas de seguridad.</li>
+        </ol>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section>
+  <h2>Contenido multimedia</h2>
+  <div class="grid">
+    <div class="caja">
+      <h2>Audio informativo</h2>
+      <p>Audio de apoyo incluido en el proyecto.</p>
+      <audio controls>
+        <source src="../audio/resumen-vulnalert.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+      </audio>
+    </div>
+    <div class="caja">
+      <h2>Video de introducción</h2>
+      <video controls poster="../img/video-poster.svg">
+        <source src="../video/resumen-vulnerabilidades.mp4" type="video/mp4">
+        Tu navegador no soporta video HTML5.
+      </video>
+    </div>
+    <div class="caja">
+      <h2>Mockup Página Web</h2>
+      <video controls>
+        <source src="../video/mockup.mp4" type="video/mp4">
+        Tu navegador no soporta video HTML5.
+      </video>
+    </div>
+  </div>
+</section>
+
+<div class="caja nota">
+  <p><strong>Nota académica:</strong> las vulnerabilidades cambian continuamente. Este sitio muestra un corte informativo al 23/09/2026. Para conocer el estado actual, consulte directamente NVD y CISA.</p>
+</div>
+
+</main>
+<footer>
+  <div>
+    <strong>VulnAlert</strong><br>
+    <p>Proyecto académico — HTML5 &amp; CSS3</p>
+  </div>
+  <div>
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+  </div>
+  <p>Actualizado: 23/09/2026</p>
+</footer>
+</div>
+</body>
+</html>
