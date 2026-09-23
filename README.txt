@@ -4,7 +4,7 @@ Universidad Tecnológica de Panamá
 Tema: Últimas vulnerabilidades
 
 
-ENlACE REPOSITORIO : https://github.com/jesusjacintofabian?tab=repositories
+PAGINA: https://github.com/jesusjacintofabian/VulnAlert
 
 INTEGRANTES:
 	JESUS JACINTO
